@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/favourites.css">
+    <link rel="stylesheet" href="CSS/movie.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/menu-popup.css">
+    <script defer src="/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__image"></div>
+        </header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-itemLink" href="#favourites">Favourites</a></li>
+                <li class="menu__list-item"><a class="menu__list-itemLink" href="#pulpFiction">Pulp Fiction</a></li>
+                <li class="menu__list-item"><a class="menu__list-itemLink" href="#django">Django</a></li>
+                <li class="menu__list-item"><a class="menu__list-itemLink" href="#laVita">La vita è bella</a></li>
+                <li class="menu__list-item"><a class="menu__list-itemLink" href="#vabank">Vabank</a></li>
+            </ul>
+        </nav>
+        <div class="popup">
+            <ul class="popup__list">
+                <li class="popup__list-item"><a class="popup__list-itemLink" href="#favourites">Favourites</a></li>
+                <li class="popup__list-item"><a class="popup__list-itemLink" href="#pulpFiction">Pulp Fiction</a></li>
+                <li class="popup__list-item"><a class="popup__list-itemLink" href="#django">Django</a></li>
+                <li class="popup__list-item"><a class="popup__list-itemLink" href="#laVita">La vita è bella</a></li>
+                <li class="popup__list-item"><a class="popup__list-itemLink" href="#vabank">Vabank</a></li>
+            </ul>
+        </div>
+        <main class="movies">
+            <section id="favourites" class="table">
+                <table class="table__favourites">
+                    <caption class="table__caption">My favourite movies</caption>
+                    <tr class="table__row">
+                        <th scope="col" class="table__cell">Title</th>
+                        <th scope="col" class="table__cell">Year</th>
+                        <th scope="col" class="table__cell">Director</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row"><a target="_blank"
+                                class="table__cell-link" title="Go to IMDB"
+                                href="https://www.imdb.com/title/tt0110912/?ref_=rvi_tt">Pulp Fiction</a></th>
+                        <td class="table__cell">1994</td>
+                        <td class="table__cell" rowspan="2">Quentin Tarantino</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row"><a target="_blank"
+                                class="table__cell-link" title="Go to IMDB"
+                                href="https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1">Django Unchained</a></th>
+                        <td class="table__cell">2012</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row"><a target="_blank"
+                                class="table__cell-link" title="Go to IMDB"
+                                href="https://www.imdb.com/title/tt0118799/?ref_=nv_sr_srsg_0">La vita è bella</a></th>
+                        <td class="table__cell">1997</td>
+                        <td class="table__cell">Roberto Benigni</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row"><a target="_blank"
+                                class="table__cell-link" title="Go to IMDB"
+                                href="https://www.imdb.com/title/tt0083271/?ref_=nv_sr_srsg_0">Vabank</a></th>
+                        <td class="table__cell">1981</td>
+                        <td class="table__cell">Juliusz Machulski</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="pulpFiction" class="movie">
+                <article class="movie__description">
+                    <div class="movie__description-image"><img class="movie__poster"
+                            src="https://static.posters.cz/image/750/plakaty/pulp-fiction-cover-i1288.jpg"
+                            alt="pulpfiction_poster"></div>
+                    <div class="movie__description-text">
+                        <h2 class="movie__title">Pulp Fiction</h2>
+                        Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John
+                        Travolta) are two hit men who are out to retrieve a suitcase stolen from their employer, mob
+                        boss Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia (Uma
+                        Thurman) out a few days later when Wallace himself will be out of town. Butch Coolidge (Bruce
+                        Willis) is an aging boxer who is paid by Wallace to lose his fight. The lives of these seemingly
+                        unrelated people are woven together comprising of a series of funny, bizarre and uncalled-for
+                        incidents.
+                    </div>
+
+                </article>
+                <article class="movie__gallery movie__display-JS">
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTUwNjQ0ODkxN15BMl5BanBnXkFtZTcwMDc5NjQwNw@@._V1_UY317_CR11,0,214,317_AL_.jpg"
+                            alt="john_travolta" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">John Travolta</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTQ1NTQwMTYxNl5BMl5BanBnXkFtZTYwMjA1MzY1._V1_UX214_CR0,0,214,317_AL_.jpg"
+                            alt="samuel_l_jackson" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Samuel L. Jackson</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjMxNzk1MTQyMl5BMl5BanBnXkFtZTgwMDIzMDEyMTE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+                            alt="uma_thurman" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Uma Thurman</span>
+                    </div>
+
+                </article>
+                <button class="movie__button">See cast</button>
+            </section>
+            <section id="django" class="movie">
+                <article class="movie__description">
+                    <div class="movie__description-image"><img class="movie__poster"
+                            src="https://static.posters.cz/image/1300/plakaty/django-unchained-i13361.jpg"
+                            alt="django_poster"></div>
+                    <div class="movie__description-text">
+                        <h2 class="movie__title">Django Unchained</h2>In 1858, a bounty hunter named Schultz seeks out a slave
+                        named
+                        Django and buys him because he needs him to find some men he is looking for. After finding them,
+                        Django wants to find his wife, Broomhilda, who along with him were sold separately by his former
+                        owner for trying to escape. Schultz offers to help him if he chooses to stay with him and be his
+                        partner. Eventually they learn that she was sold to a plantation in Mississippi. Knowing they
+                        can't just go in and say they want her, they come up with a plan so that the owner will welcome
+                        them into his home and they can find a way.
+                    </div>
+
+                </article>
+                <article class="movie__gallery movie__display-JS">
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTkyNjY1NDg3NF5BMl5BanBnXkFtZTgwNjA2MTg0MzE@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                            alt="jamie_foxx" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Jamie Foxx</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTM4MDk3OTYxOF5BMl5BanBnXkFtZTcwMDk5OTUwOQ@@._V1_UY317_CR9,0,214,317_AL_.jpg"
+                            alt="christoph_waltz" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Christoph Waltz</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_UY317_CR10,0,214,317_AL_.jpg"
+                            alt="leonardo_dicaprio" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Leonardo DiCaprio</span>
+                    </div>
+                </article>
+                <button class="movie__button">See cast</button>
+            </section>
+            <section id="laVita" class="movie">
+                <article class="movie__description">
+                    <div class="movie__description-image"><img class="movie__poster"
+                            src="https://static.cinemagia.ro/img/db/movie/00/35/41/la-vita-e-bella-313413l.jpg"
+                            alt="la-vita-e-bella-poster"></div>
+                    <div class="movie__description-text">
+                        <h2 class="movie__title">La vita è bella</h2>In 1930s Italy, a carefree Jewish book keeper named Guido
+                        starts a fairy tale life by courting and marrying a lovely woman from a nearby city. Guido and
+                        his wife have a son and live happily together until the occupation of Italy by German forces. In
+                        an attempt to hold his family together and help his son survive the horrors of a Jewish
+                        Concentration Camp, Guido imagines that the Holocaust is a game and that the grand prize for
+                        winning is a tank.
+                    </div>
+
+                </article>
+                <article class="movie__gallery movie__display-JS">
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTUwMzI1Nzg5NF5BMl5BanBnXkFtZTYwODU5NjYz._V1_UY317_CR13,0,214,317_AL_.jpg"
+                            alt="roberto_benigni" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Roberto Benigni
+                        </span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTcyMjUxNzMzOF5BMl5BanBnXkFtZTYwMzM1NDM3._V1_UY317_CR104,0,214,317_AL_.jpg"
+                            alt="nicoletta_braschi" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Nicoletta Braschi
+                        </span>
+                    </div>
+                    <div class="movie__gallery-images ">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjdhNTFiYTYtOGE4Ni00NTVjLTlhMGYtYThhNzAxZjUxMmM5XkEyXkFqcGdeQXVyNDM4Nzc5NzY@._V1_UY317_CR20,0,214,317_AL_.jpg"
+                            alt="giorgio_cantarini" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Giorgio Cantarini
+                        </span>
+                    </div>
+                </article>
+                <button class="movie__button">See cast</button>
+            </section>
+            <section id="vabank" class="movie">
+                <article class="movie__description">
+                    <div class="movie__description-image"><img class="movie__poster"
+                            src="https://www.poster.pl/posters/pagowski_andrzej_vabank.jpg" alt="vabank_poster"></div>
+                    <div class="movie__description-text">
+                        <h2 class="movie__title">Vabank</h2>Set in Warsaw in 1930's. After six years in jail, framed for
+                        bank robbery by an accomplice, the legendary Kwinto has only revenge on his mind. He is a
+                        safecracker in the old style, a thief with a sense of pride and loyalty. Upon leaving the jail
+                        he learns that his friend with whom he played in the jazz band has been murdered by the same guy
+                        - now a bank president - who sent him to prison. Kramer hopes to keep Kwinto's mouth shut by
+                        paying him off, but at the same time he hires a paid gun to kill him. Meanwhile, some young,
+                        petty crooks hearing that Kwinto is free want to join forces with him for a job. Kwinto,
+                        employing a retired professional and two young admirers, pulls his last job to get even with
+                        Kramer.
+                    </div>
+
+                </article>
+                <article class="movie__gallery movie__display-JS">
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDUzMmNmNjAtMGZhMy00NzcxLWFkNjMtYjNjNWM2ODk0MGM2XkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY317_CR11,0,214,317_AL_.jpg"
+                            alt="jan_machulski" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Jan Machulski</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzY3MmYxZjAtOTkwNS00NTA5LThjNjgtN2E5YTQ2MTI3MmM0XkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY317_CR131,0,214,317_AL_.jpg"
+                            alt="leonard_pietraszak" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Leonard Pietraszak</span>
+                    </div>
+                    <div class="movie__gallery-images">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDIwMzcyZGQtZDdlMy00OTQwLWI1ZWQtMjQwOGYyNGYxMTYwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY317_CR130,0,214,317_AL_.jpg"
+                            alt="witold_pyrkosz" class="movie__gallery-image">
+                        <span class="movie__gallery-actor">Witold Pyrkosz</span>
+                    </div>
+                </article>
+                <button class="movie__button">See cast</button>
+            </section>
+        </main>
+        <footer class="footer">&copy; Krzysztof Kwieciński 2020
+        </footer>
+    </div>
+</body>
+
+</html>

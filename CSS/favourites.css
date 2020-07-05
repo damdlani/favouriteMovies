@@ -1,0 +1,42 @@
+.table {
+    width: 100%;
+    margin: 80px 0 120px 0;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.table__favourites {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 4px 1px rgb(126, 126, 126);
+}
+
+.table__caption {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: "sriracha", sans-serif;
+}
+.table__cell {
+    padding: 15px 30px;
+    border: 1px solid black;
+    
+}
+.table__director {
+    font-style: italic;
+}
+.table__row:nth-child(odd) {
+    background-color: #eee;
+}
+.table__cell--rowHeader {
+    font-weight: normal;
+}
+.table__cell-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+.table__cell-link:hover {
+    color: brown;
+}
