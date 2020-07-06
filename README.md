@@ -8,4 +8,4 @@ To be modified in the future.
 - menu pop-up is available after reaching given page position
 - movie titles in the table link to IMDB
 
-**[See page](damdlani.github.io/favouriteMovies/)**
+**[See page](https://damdlani.github.io/favouriteMovies/)**
