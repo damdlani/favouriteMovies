@@ -3,12 +3,11 @@ console.log("Cześć");
 
 //getting elements from DOM
 let movieButtons = Array.from(document.querySelectorAll(".movie__button"));
-let galleries = Array.from(document.querySelectorAll(".movie__gallery")); //można inaczej też zapisać do array
+let galleries = Array.from(document.querySelectorAll(".movie__gallery")); 
 let descriptions = Array.from(document.querySelectorAll(".movie__description"));
 
 
-//condition for sidemenu visibility
-window.addEventListener("scroll", () => {
+const showPopupMenu = () => {
     let scrollPosition = window.pageYOffset;
     let sideMenu = document.querySelector(".popup");
     if (scrollPosition > 400) {
@@ -16,8 +15,11 @@ window.addEventListener("scroll", () => {
     } else {
         sideMenu.classList.remove("popup__visible")
     }
-})
-
+}
+const init = () => {
+    window.addEventListener("scroll", showPopupMenu)
+}
+init()
 //changing of button's content
 function innerChange(){
     if (movieButton.innerHTML === "See cast") {
